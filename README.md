@@ -60,14 +60,13 @@ The model achieves approximately **98.9% prediction accuracy**, indicating excel
 ## 📈 Visualizations
 
 ### Correlation Heatmap
-Heatmap.png
+![Heatmap](Heatmap.png)
 
 ### Gold Price Distribution
-count VS GLD.png
+![Distribution](count%20VS%20GLD.png)
 
 ### Actual vs Predicted Values
-Actual vs Predicted Values.png
-
+![Prediction](Actual%20vs%20Predicted%20Values.png)
 ## 📁 Project Structure
 
 ```text
