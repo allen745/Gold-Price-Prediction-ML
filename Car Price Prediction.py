@@ -109,6 +109,27 @@ plt.title("Actual vs Predicted Price")
 plt.show()
 
 
+spx = float(input("Enter SPX Value: "))
+uso = float(input("Enter USO Value: "))
+slv = float(input("Enter SLV Value: "))
+eur_usd = float(input("Enter EUR/USD Value: "))
+
+input_data = np.array([[spx, uso, slv, eur_usd]])
+
+prediction = regressor.predict(input_data)
+
+print("\nPredicted Gold Price (GLD): $", round(prediction[0], 2))
+
+print("\nPredicted Gold Price (GLD): ${:.2f}".format(prediction[0]))
+
+# Confidence message
+if error_score > 0.95:
+    print("Model Status: Excellent Accuracy")
+elif error_score > 0.85:
+    print("Model Status: Good Accuracy")
+else:
+    print("Model Status: Needs Improvement")
+
 
 
 
